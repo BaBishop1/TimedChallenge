@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using TimedChallenge.Data.Entities;
 
-
-public class PostEnitity
+namespace TimedChallenge.Data.Entities
+{
+    public class PostEntity
     {
         [Key]
         public int Id { get; set; }
@@ -18,3 +20,4 @@ public class PostEnitity
         [Required]
         public DateTime DateCreated { get; set; }
     }
+}

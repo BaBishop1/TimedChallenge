@@ -4,6 +4,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
+namespace TimedChallenge.Data.Entities
+{
     public class Comment
     {
         [Key]
@@ -15,3 +17,4 @@ using System.Threading.Tasks;
         [Required]
         public DateTime DateCreated { get; set; }
     }
+}
