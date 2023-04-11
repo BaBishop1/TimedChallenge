@@ -18,7 +18,6 @@ namespace TimedChallenge.Data.Entities
         public string CommentText { get; set; }
         [Required]
         public Guid AuthorID { get; set; }
-        [ForeignKey("Reply")]
         public virtual List<Reply> RepliesToComment { get; set; }
         [Required]
         public DateTime DateCreated { get; set; }
