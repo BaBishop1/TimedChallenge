@@ -15,8 +15,8 @@ namespace TimedChallenge.Data.Entities
         public string PostTitle { get; set; }
         [Required]
         public string PostText { get; set; }
-        public List<Comment> CommentsOnPost { get; set; }
-        public List<Like> LikesOnPost { get; set; }
+        public virtual List<Comment> CommentsOnPost { get; set; }
+        public virtual List<Like> LikesOnPost { get; set; }
         [Required]
         public DateTime DateCreated { get; set; }
     }
