@@ -1,4 +1,4 @@
 public interface IPostService
 {
-    Task<bool> RegisterPostAsync()
+    Task<bool> RegisterPostAsync(PostRegister model);
 }
