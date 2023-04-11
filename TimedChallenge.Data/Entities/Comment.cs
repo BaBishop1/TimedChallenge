@@ -9,11 +9,11 @@ namespace TimedChallenge.Data.Entities
     public class Comment
     {
         [Key]
-        public int Id { get; set; }
+        public int CommentId { get; set; }
         [Required]
         public string CommentText { get; set; }
         public Guid AuthorID { get; set; }
-        public List<Reply> RepliesToComment { get; set; }
+        public virtual List<Reply> RepliesToComment { get; set; }
         [Required]
         public DateTime DateCreated { get; set; }
     }
